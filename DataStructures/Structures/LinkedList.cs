@@ -19,7 +19,14 @@ namespace Structures
 
         public bool IsReadOnly => throw new System.NotImplementedException();
 
-        private void Add(Node<T> node)
+         /*
+         You are given the pointer to the head node of a linked list and an integer to add to the list. 
+         Create a new node with the given integer. 
+         Insert this node at the tail of the linked list and return 
+         the head node of the linked list formed after inserting this new node. 
+         The given head pointer may be null, meaning that the initial list is empty.
+        */
+        private void AddLast(Node<T> node)
         {
             if(Head == null)
             {
@@ -35,9 +42,31 @@ namespace Structures
             Count++;
         }
 
+        private void AddFirst(Node<T> node)
+        {
+            if(Head == null)
+            {
+                Head = node;
+                Tail = node;
+            }
+            else
+            {
+               node.Next = Head;
+               Head = node;
+            }
+
+            Count++;
+        }
+        // 2) Insert a node at the tail of a linked list
         public void Add(T item)
         {
-            this.Add(new Node<T>(item));
+            this.AddLast(new Node<T>(item));
+        }
+        
+        // 3) Insert a node at the head of a linked list
+        public void AddFirst(T item)
+        {
+            this.AddFirst(new Node<T>(item));
         }
 
         public void Clear()
@@ -76,6 +105,69 @@ namespace Structures
         public void CopyTo(T[] array, int arrayIndex)
         {
             throw new System.NotImplementedException();
+        }
+
+        public T GetValue(int position)
+        {
+            Node<T> nodeAux = this.Head;
+            int currentPosition = 0;
+            
+
+            while(nodeAux != null)
+            {
+                if(currentPosition == position)
+                {
+                    return nodeAux.Value;
+                }
+                nodeAux = nodeAux.Next;
+                currentPosition++;
+            }
+            
+            return default(T);
+        }
+
+        /*
+          4) Insert a node at a specific position in a linked list
+        */
+        public void InsertAt(T value, int position)
+        {
+            Node<T> node = new Node<T>(value);
+
+            Node<T> previous = this.Head;
+            Node<T> nodeAux = this.Head;
+            int currentPosition = 0;
+
+           if(position > this.Count)
+               throw new ArgumentOutOfRangeException();
+           else
+           {
+               if(this.Head == null)
+               {
+                    this.Head = node;
+                    this.Tail = node;
+               }
+               else
+               {
+                   while(nodeAux != null)
+                   {
+                       if(position == currentPosition)
+                       {
+                           previous.Next = nodeAux;
+                           node.Next = nodeAux;
+                           
+                           break;
+                       }
+                       else
+                       {
+                           previous = nodeAux;
+                           nodeAux = nodeAux.Next;
+                           currentPosition++;
+                       }
+                   }
+               }
+                this.Count++;
+           }
+
         }
 
         public IEnumerator<T> GetEnumerator()
