@@ -1,11 +1,13 @@
 using System;
 using Xunit;
 
+
 namespace Structures.Test
 {
     
     public class LinkedListTest
     {
+        #region Linked list 
         [Fact]
         public void AddDecimalLinkedList_Add_AddOk()
         {
@@ -159,6 +161,39 @@ namespace Structures.Test
             Assert.NotNull(elements);
             Assert.True(elements.Count == 3);
             Assert.True(valueInserted == 10);
+        }    
+        #endregion
+
+        #region Doubly Linked List
+        [Fact]
+        public void AddLinkedList_AddLast_AddOk()
+        {
+            DoublyLinkedList.LinkedList<int> numbers = new DoublyLinkedList.LinkedList<int>();
+            numbers.Add(4);
+
+            Assert.NotNull(numbers);
+            Assert.True(numbers.Count == 1);
         }
+
+         [Fact]
+        public void AddLinkedList_AddLast_AddOk2()
+        {
+            DoublyLinkedList.LinkedList<int> numbers = new DoublyLinkedList.LinkedList<int>();
+            numbers.Add(4);
+            numbers.Add(5);
+
+            int first = numbers.GetValue(0);
+            int second = numbers.GetValue(1);
+
+            int expectedFirst = 4;
+            int expectedSecond = 5;
+
+            Assert.NotNull(numbers);
+            Assert.True(first == expectedFirst);
+            Assert.True(second == expectedSecond);
+            Assert.True(numbers.Count == 2);
+        }
+        #endregion
+        
     }
 }

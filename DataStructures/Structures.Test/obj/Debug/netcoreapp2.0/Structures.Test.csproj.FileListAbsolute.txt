@@ -13,3 +13,5 @@
 /home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/obj/Debug/netcoreapp2.0/Structures.Test.AssemblyInfo.cs
 /home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/obj/Debug/netcoreapp2.0/Structures.Test.dll
 /home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/obj/Debug/netcoreapp2.0/Structures.Test.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/bin/Debug/netcoreapp2.0/DoublyLinkedList.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/bin/Debug/netcoreapp2.0/DoublyLinkedList.pdb
