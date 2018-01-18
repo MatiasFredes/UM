@@ -5,54 +5,33 @@ using Structures;
 
 namespace Stack
 {
-    public class Stack<T> : ICollection<T>
+    public class Stack<T> : IEnumerable<T>
     {
-        private Node<T> Head;
-        private Structures.LinkedList<T> _stack;
-
-        public int Count => throw new NotImplementedException();
-
-        public bool IsReadOnly => throw new NotImplementedException();
+       private Structures.LinkedList<T> _stack;
 
         public Stack()
         {
-            this.Head = null;
-            this._stack = new 
+           this._stack = new Structures.LinkedList<T>();
         }
 
-        public void Add(T item)
+        public void Push(T value)
         {
-           
+            this._stack.AddFirst(value);
         }
 
-        public void Clear()
+        public void Pop()
         {
-            throw new NotImplementedException();
-        }
-
-        public bool Contains(T item)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CopyTo(T[] array, int arrayIndex)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool Remove(T item)
-        {
-            throw new NotImplementedException();
+            this._stack.RemoveFirst();
         }
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            return this._stack.GetEnumerator();
         }
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+          return this.GetEnumerator();
         }
     }
 }
