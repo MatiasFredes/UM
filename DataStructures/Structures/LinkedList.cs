@@ -218,6 +218,17 @@ namespace Structures
             return true;
         }
 
+        public void RemoveFirst()
+        {
+            if(this.Count > 0)
+            {
+                this.Head = Head.Next;
+                this.Count--;
+            }
+        }
+
+
+
         IEnumerator IEnumerable.GetEnumerator()
         {
             return this.GetEnumerator();
