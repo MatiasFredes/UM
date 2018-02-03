@@ -8,10 +8,15 @@ namespace Stack
     public class Stack<T> : IEnumerable<T>
     {
        private Structures.LinkedList<T> _stack;
-
+        
         public Stack()
         {
            this._stack = new Structures.LinkedList<T>();
+        }
+
+        public int Count
+        {
+            get {return this._stack.Count;}
         }
 
         public void Push(T value)

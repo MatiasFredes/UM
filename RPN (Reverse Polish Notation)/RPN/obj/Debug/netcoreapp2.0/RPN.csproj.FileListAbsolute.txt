@@ -1,0 +1,14 @@
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/RPN.deps.json
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/RPN.runtimeconfig.json
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/RPN.runtimeconfig.dev.json
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/RPN.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/RPN.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/Stack.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/Structures.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/Stack.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/bin/Debug/netcoreapp2.0/Structures.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/obj/Debug/netcoreapp2.0/RPN.csproj.CoreCompileInputs.cache
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/obj/Debug/netcoreapp2.0/RPN.AssemblyInfoInputs.cache
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/obj/Debug/netcoreapp2.0/RPN.AssemblyInfo.cs
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/obj/Debug/netcoreapp2.0/RPN.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/RPN (Reverse Polish Notation)/RPN/obj/Debug/netcoreapp2.0/RPN.pdb

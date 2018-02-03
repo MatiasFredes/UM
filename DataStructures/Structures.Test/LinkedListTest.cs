@@ -1,4 +1,5 @@
 using System;
+using Stack;
 using Xunit;
 
 
@@ -163,7 +164,6 @@ namespace Structures.Test
             Assert.True(valueInserted == 10);
         }    
         #endregion
-
         #region Doubly Linked List
         [Fact]
         public void AddLinkedList_AddLast_AddOk()
@@ -194,6 +194,31 @@ namespace Structures.Test
             Assert.True(numbers.Count == 2);
         }
         #endregion
+        #region Stack
+        [Fact]
+        public void PushElement_Push_AddElementOnTop()
+        {
+           Stack<int> stack = new Stack<int>();
+           stack.Push(2);
+
+           Assert.NotNull(stack);
+           Assert.Equal(stack.Count,1);
+        }
+
+         [Fact]
+        public void PushElement_Push_VerifyOrder()
+        {
+           Stack<int> stack = new Stack<int>();
+           stack.Push(2);
+           stack.Push(4);
+           Stack<int> expected = new Stack<int>();
+           Assert.NotNull(stack);
+           Assert.Equal(stack,expected);
+
+           
+        }
+
         
+        #endregion
     }
 }
