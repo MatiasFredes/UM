@@ -24,9 +24,11 @@ namespace Stack
             this._stack.AddFirst(value);
         }
 
-        public void Pop()
+        public T Pop()
         {
+            T value = this._stack.GetValue(0);
             this._stack.RemoveFirst();
+            return value;
         }
 
         public IEnumerator<T> GetEnumerator()
