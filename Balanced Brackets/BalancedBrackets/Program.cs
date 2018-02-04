@@ -3,7 +3,7 @@ using Stack;
 
 namespace BalancedBrackets
 {
-    class Program
+   public static class Program
     {
         public static Stack<char> stack {get;set;}
         public static Stack<char> stackAux {get;set;}
@@ -23,16 +23,15 @@ namespace BalancedBrackets
          }
         static void Main(string[] args)
         {
-            string s = "{}";
-
+            string s = "{[(])}";
+            
             Console.WriteLine(s);
-            Console.WriteLine(IsBalanced(s)? "True": "False");
+            Console.WriteLine(IsBalanced(s));
         }
 
         private static void FillStack(char[] brackets)
         {
-             stack = new Stack<char>();
-             foreach (char item in brackets)
+            foreach (char item in brackets)
             {
                 stack.Push(item);
             }
@@ -42,13 +41,14 @@ namespace BalancedBrackets
             return stack.Count % 2 == 0;
         }
 
-        private static bool IsBalanced(string s)
+        public static string IsBalanced(string s)
         {
+            stack = new Stack<char>();
             stackAux = new Stack<char>();
             bool isBalanced = false;
             FillStack(s.ToCharArray());
             if(!AmountIsEven())
-                return false;
+                return "NO";
             else
             {
                  while(stack.Count > 0)
@@ -64,7 +64,7 @@ namespace BalancedBrackets
                     char lastElement = stack.Pop();
                     isBalanced = (GetBracketValue(lastElement) + GetBracketValue(firstElement)) == 0;
                     if(!isBalanced)
-                        return false;
+                        return "NO";
 
                     while(stackAux.Count > 0)
                     {
@@ -73,10 +73,8 @@ namespace BalancedBrackets
                     }
                 }
             }
-
-           
-
-            return isBalanced;
+            
+            return "YES";
         }
     }
    
