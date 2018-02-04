@@ -23,7 +23,7 @@ namespace BalancedBrackets
          }
         static void Main(string[] args)
         {
-            string s = "[[()]]";
+            string s = "{}";
 
             Console.WriteLine(s);
             Console.WriteLine(IsBalanced(s)? "True": "False");
@@ -37,34 +37,44 @@ namespace BalancedBrackets
                 stack.Push(item);
             }
         }
+        private static bool AmountIsEven()
+        {
+            return stack.Count % 2 == 0;
+        }
 
         private static bool IsBalanced(string s)
         {
             stackAux = new Stack<char>();
             bool isBalanced = false;
             FillStack(s.ToCharArray());
-
-            while(stack.Count > 0)
+            if(!AmountIsEven())
+                return false;
+            else
             {
-                char firstElement = stack.Pop();
-
-                while(stack.Count != 1)
+                 while(stack.Count > 0)
                 {
-                    char element = stack.Pop();
-                    stackAux.Push(element);
-                }
+                    char firstElement = stack.Pop();
 
-                char lastElement = stack.Pop();
-                isBalanced = (GetBracketValue(lastElement) + GetBracketValue(firstElement)) == 0;
-                if(!isBalanced)
-                    return false;
+                    while(stack.Count != 1)
+                    {
+                        char element = stack.Pop();
+                        stackAux.Push(element);
+                    }
 
-                while(stackAux.Count > 0)
-                {
-                    char element = stackAux.Pop();
-                    stack.Push(element);
+                    char lastElement = stack.Pop();
+                    isBalanced = (GetBracketValue(lastElement) + GetBracketValue(firstElement)) == 0;
+                    if(!isBalanced)
+                        return false;
+
+                    while(stackAux.Count > 0)
+                    {
+                        char element = stackAux.Pop();
+                        stack.Push(element);
+                    }
                 }
             }
+
+           
 
             return isBalanced;
         }
