@@ -17,3 +17,5 @@
 /home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/bin/Debug/netcoreapp2.0/DoublyLinkedList.pdb
 /home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/bin/Debug/netcoreapp2.0/Stack.dll
 /home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/bin/Debug/netcoreapp2.0/Stack.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/bin/Debug/netcoreapp2.0/Queue.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/DataStructures/Structures.Test/bin/Debug/netcoreapp2.0/Queue.pdb

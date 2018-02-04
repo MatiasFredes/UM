@@ -1,4 +1,5 @@
 using System;
+using Queue;
 using Stack;
 using Xunit;
 
@@ -6,7 +7,7 @@ using Xunit;
 namespace Structures.Test
 {
     
-    public class LinkedListTest
+    public class StructuresTest
     {
         #region Linked list 
         [Fact]
@@ -217,8 +218,41 @@ namespace Structures.Test
 
            
         }
+        #endregion
+        #region Queue
+        [Fact]
+        public void EnqueueElement()
+        {
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
 
-        
+            Assert.NotNull(queue);
+            Assert.True(queue.Count == 3);
+            
+        }
+
+        [Fact]
+        public void DequeueElement()
+        {
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+
+            Assert.NotNull(queue);
+            Assert.True(queue.Count == 3);
+
+            int firstValue = queue.Dequeue();
+            Assert.True(firstValue == 10);
+
+            int secondValue = queue.Dequeue();
+            Assert.True(secondValue == 20);
+            
+            int thirdValue = queue.Dequeue();
+            Assert.True(thirdValue == 30);
+        }       
         #endregion
     }
 }

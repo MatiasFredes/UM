@@ -1,0 +1,14 @@
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/BalancedBrackets.deps.json
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/BalancedBrackets.runtimeconfig.json
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/BalancedBrackets.runtimeconfig.dev.json
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/BalancedBrackets.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/BalancedBrackets.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/Stack.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/Structures.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/Stack.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/bin/Debug/netcoreapp2.0/Structures.pdb
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/obj/Debug/netcoreapp2.0/BalancedBrackets.csproj.CoreCompileInputs.cache
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/obj/Debug/netcoreapp2.0/BalancedBrackets.AssemblyInfoInputs.cache
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/obj/Debug/netcoreapp2.0/BalancedBrackets.AssemblyInfo.cs
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/obj/Debug/netcoreapp2.0/BalancedBrackets.dll
+/home/matias/Documents/Path/fundamentals/Algorithms and Data Structure/Balanced Brackets/BalancedBrackets/obj/Debug/netcoreapp2.0/BalancedBrackets.pdb

@@ -26,7 +26,6 @@ namespace RPN
                     int operando_2 = stackIntegers.Pop();
                     int resultado = ResultadoOperacion(operando_1, operando_2, item);
                     stackIntegers.Push(resultado);
-                    
                 }
               
             } 
